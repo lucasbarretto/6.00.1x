@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec 27 20:40:58 2017
+
+@author: josebarretto
+"""
+
+def gcdIter(a, b):
+    '''
+    a, b: positive integers
+    
+    returns: a positive integer, the greatest common divisor of a & b.
+    '''
+    
+    while a != b:
+        if a > b:
+            a -= b
+        if a < b:
+            b -= a
+    
+    return a
